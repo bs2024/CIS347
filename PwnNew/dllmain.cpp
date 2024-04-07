@@ -70,6 +70,7 @@ DWORD APIENTRY PwnHook(HMODULE hModule)
     float defaultJump = *(float*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2C, 0x128 });
     float defaultSpeed = *(float*)LocateDirectMemoryAddress(moduleBase + 0x78B34, {});
     float defaultSpeedJump = *(float*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2C, 0x124 });
+    int objectTP = 0;
 
     //console
     AllocConsole();
@@ -168,6 +169,258 @@ DWORD APIENTRY PwnHook(HMODULE hModule)
             Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
             Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
             Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+        }
+
+        if (GetAsyncKeyState(VK_F6))
+        {
+            if (objectTP < 21) {
+                objectTP++;
+            } else {
+                objectTP = 0;
+            }
+
+            if (objectTP == 0) {
+                std::cout << "Golden Egg 1\n";
+                xCoordinate = -25045;
+                yCoordinate = 18085;
+                zCoordinate = 260;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 1) {
+                std::cout << "Golden Egg 2\n";
+                xCoordinate = -51570;
+                yCoordinate = -61215;
+                zCoordinate = 5020;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 2) {
+                std::cout << "Golden Egg 3\n";
+                xCoordinate = -24512;
+                yCoordinate = -69682;
+                zCoordinate = 2659;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 3) {
+                std::cout << "Golden Egg 4\n";
+                xCoordinate = 60453;
+                yCoordinate = -17409;
+                zCoordinate = 2939;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 4) {
+                std::cout << "Golden Egg 5\n";
+                xCoordinate = 1522;
+                yCoordinate = 14966;
+                zCoordinate = 7022;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 5) {
+                std::cout << "Golden Egg 6\n";
+                xCoordinate = 11604;
+                yCoordinate = -13131;
+                zCoordinate = 411;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 7) {
+                std::cout << "Golden Egg 7\n";
+                xCoordinate = -51570;
+                yCoordinate = -61215;
+                zCoordinate = 5020;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 7) {
+                std::cout << "Golden Egg 8\n";
+                xCoordinate = 48404;
+                yCoordinate = 28117;
+                zCoordinate = 704;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 8) {
+                std::cout << "Golden Egg 9\n";
+                xCoordinate = 65225;
+                yCoordinate = -5740;
+                zCoordinate = 4928;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 9) {
+                std::cout << "Ballmer Peak Egg\n";
+                xCoordinate = -2778;
+                yCoordinate = -11035;
+                zCoordinate = 10504;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 10) {
+                std::cout << "Ballmer Peak Poster\n";
+                xCoordinate = -6101;
+                yCoordinate = -10956;
+                zCoordinate = 10636;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 11) {
+                std::cout << "Great Balls of Fire\n";
+                xCoordinate = -43655;
+                yCoordinate = -55820;
+                zCoordinate = 322;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 12) {
+                std::cout << "Michael Angelo\n";
+                xCoordinate = 260255;
+                yCoordinate = -248555;
+                zCoordinate = 1415;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 13) {
+                std::cout << "Bear Chest\n";
+                xCoordinate = -7894;
+                yCoordinate = 64482;
+                zCoordinate = 2663;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 14) {
+                std::cout << "Cow Chest\n";
+                xCoordinate = 252920;
+                yCoordinate = -245380;
+                zCoordinate = 1170;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+                ;
+            }
+            else if (objectTP == 15) {
+                std::cout << "Giant Rat\n";
+                xCoordinate = 0;
+                yCoordinate = 0;
+                zCoordinate = 0;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 16) {
+                std::cout << "Lost Cave Bush\n";
+                xCoordinate = -53539;
+                yCoordinate = -44246;
+                zCoordinate = 358;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 17) {
+                std::cout << "Farmer\n";
+                xCoordinate = 21553;
+                yCoordinate = 41232;
+                zCoordinate = 2133;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 18) {
+                std::cout << "LavaChest\n";
+                xCoordinate = 50876;
+                yCoordinate = -5243;
+                zCoordinate = 1523;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 19) {
+                std::cout << "Blocky Chest\n";
+                xCoordinate = -3055;
+                yCoordinate = 23005;
+                zCoordinate = 2275;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else if (objectTP == 20) {
+                std::cout << "Gun Shop Owner\n";
+                xCoordinate = -37463;
+                yCoordinate = -18050;
+                zCoordinate = 2416;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
+            else {
+                std::cout << "Justin Tolerable\n";
+                xCoordinate = -41084;
+                yCoordinate = -16256;
+                zCoordinate = 2270;
+
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x90 }), (BYTE*)&xCoordinate, sizeof(xCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x94 }), (BYTE*)&yCoordinate, sizeof(yCoordinate));
+                Patch((BYTE*)LocateDirectMemoryAddress(moduleBase + 0x00097D7C, { 0x2c, 0x148, 0x4, 0x280, 0x98 }), (BYTE*)&zCoordinate, sizeof(zCoordinate));
+
+            }
         }
     }
     // Almost forgot to close the console and kill the thread lol

@@ -1,11 +1,11 @@
 ﻿  dllmain.cpp
-C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(78,18): warning C4566: character represented by universal-character-name '\u1559' cannot be represented in the current code page (1252)
+C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(79,18): warning C4566: character represented by universal-character-name '\u1559' cannot be represented in the current code page (1252)
   (compiling source file '/dllmain.cpp')
   
-C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(78,18): warning C4566: character represented by universal-character-name '\u0CA0' cannot be represented in the current code page (1252)
+C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(79,18): warning C4566: character represented by universal-character-name '\u0CA0' cannot be represented in the current code page (1252)
   (compiling source file '/dllmain.cpp')
   
-C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(78,18): warning C4566: character represented by universal-character-name '\u1557' cannot be represented in the current code page (1252)
+C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(79,18): warning C4566: character represented by universal-character-name '\u1557' cannot be represented in the current code page (1252)
   (compiling source file '/dllmain.cpp')
   
   Generating code

@@ -1,16 +1,16 @@
 ﻿  dllmain.cpp
-C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(79,18): warning C4566: character represented by universal-character-name '\u1559' cannot be represented in the current code page (1252)
+C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(79,15): warning C4566: character represented by universal-character-name '\u1559' cannot be represented in the current code page (1252)
   (compiling source file '/dllmain.cpp')
   
-C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(79,18): warning C4566: character represented by universal-character-name '\u0CA0' cannot be represented in the current code page (1252)
+C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(79,15): warning C4566: character represented by universal-character-name '\u0CA0' cannot be represented in the current code page (1252)
   (compiling source file '/dllmain.cpp')
   
-C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(79,18): warning C4566: character represented by universal-character-name '\u1557' cannot be represented in the current code page (1252)
+C:\Users\Benjamin\source\repos\PwnNEW\PwnNEW\dllmain.cpp(79,15): warning C4566: character represented by universal-character-name '\u1557' cannot be represented in the current code page (1252)
   (compiling source file '/dllmain.cpp')
   
   Generating code
   1 of 87 functions ( 1.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   PwnNEW.vcxproj -> C:\Users\Benjamin\source\repos\PwnNEW\Release\PwnNEW.dll
